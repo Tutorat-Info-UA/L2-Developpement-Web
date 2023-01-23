@@ -85,3 +85,20 @@ Faire une fonction PHP pour à partir d'un paramètre une ville et retourne le c
 Une autre API va nous permettre d'obtenir une image via cette URL
 `https://lecadastre.com/wp-content/themes/codium-dn/datas/thumbs580/${CodeCommune}.webp"`
 Et nous rajouterons une colonne à gauche du tableau de l'exercice 7 qui contiendra une balise `<img>` avec l'Image obtenu via la ville en première colonne
+
+## Exercice 10 :
+### Formulaire
+Dans un fichier `plan.php` faire un formulaire HTML de saisie d'un nom de ville quelconque, ce formulaire redirigera vers la même page en POST.
+
+Si un nom de ville est fourni en POST on fera une recherche sur 
+`https://geo.api.gouv.fr/communes?nom=Nantes` en remplacant donc `Nantes` par la recherche
+et on affichera la liste des noms et code pour chaque ville, le code sera un lien clicable vers la même page mais on fournira dans l'url le code de la ville
+
+Si un code de ville est fourni en GET on affichera l'image 
+`https://lecadastre.com/wp-content/themes/codium-dn/datas/thumbs580/${CodeCommune}.webp"`
+
+## Exercice 11 :
+### Fichier
+On souhaite évité de spammer l'API du gouvernement et donc on va placer dans un dossier une mémoire, ainsi dans un dossier `buffer-ville` on placera un fichier avec comme nom la recherche et comme contenu la liste des noms et code de ville.
+
+Adapter ensuite le code précédent pour qu'il utilise ce buffer.
