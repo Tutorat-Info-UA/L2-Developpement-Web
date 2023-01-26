@@ -1,4 +1,4 @@
-# Joke generator
+# 🤡 Joke generator 🤡
 
 
 ## Exercice 1 : Générateur de blagues 
